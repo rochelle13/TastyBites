@@ -1,0 +1,144 @@
+body {
+    background-color: #d9aae6;
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Lucida Handwriting';
+}
+
+p {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    text-align: center;
+}
+
+/* NAVIGATION CSS*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+
+    display: block;
+    color: rgb(2, 2, 2);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lobster';
+
+}
+
+
+li a:hover {
+    background-color: #ebe8e8;
+}
+
+/*BOX CSS*/
+#myBox {
+    width: 1000px;
+    height: 160px;
+    background-color: #f0eeee6d;
+    border-radius: 15px;
+    margin-left: 200px;
+}
+#myBox2 {
+    width: 1000px;
+    height: 470px;
+    background-color: #f0eeee6d;
+    border-radius: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#myBox3 {
+    width: 400px;
+    height: 120px;
+    background-color: #f0eeee6d;
+    border-radius: 50px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 550px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+
+ /* Style for lightbox */
+ #lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+img {
+    width: 250px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 960px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    ul {
+        position: static; /* Remove fixed positioning for small screens */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        float: none;
+    }
+
+    
+
+    #myBox, #myBox2, #myBox3 {
+        width: 90%; /* Make the boxes responsive */
+        margin: 10px auto;
+       
+    }
+
+    #myBox3 {
+        margin-top: 20px; /* Add spacing for the small box */
+    }
+    #lightbox img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    img {
+        width: 100%; /* Slightly smaller image size for better mobile experience */
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTS</title>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="products.html">products</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="news.html">news</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <div style="padding-top: 20px;">
+        <table>
+            <tr>
+                <td><img src="_images/Logo.png"
+                        style="vertical-align: middle; width: 100px; height: 100px;border-radius: 50%"></td>
+                <td>
+                    <h1>TASTY BITES</h1>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    
+    <table>
+        <tr>
+            <td><img src="_images/strawberry-cupcake.png" onclick="showLightbox('_images/cupcake.png')"
+                    alt="Tasty Bite's Strawberry Cupcake"></td>
+            <td><img src="_images/brownies.png" onclick="showLightbox('_images/brownies.png')"></td>
+            <td><img src="_images/cake.png" onclick="showLightbox('_images/cake.png')"></td>
+        </tr>
+        <tr>
+            <td><img src="_images/cookies.png" onclick="showLightbox('_images/cookies.png')"></td>
+            <td><img src="_images/cupcake2.png" onclick="showLightbox('_images/cupcake2.png')"></td>
+            <td><img src="_images/pastry.png" onclick="showLightbox('_images/pastry.png')"></td>
+        </tr>
+    </table>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightboxImage" src="" alt="Lightbox Preview">
+    </div>
+
+</body>
+
+</html>
